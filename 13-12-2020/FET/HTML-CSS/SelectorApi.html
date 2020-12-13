@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Assignment on Selector Api!</title>
+    <script>
+        function color() {
+            var applySelector = document.querySelectorAll('div>p')
+            for (var i = 0; i < applySelector.length; i++) {
+                applySelector[i].style.color = 'red'
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Selector Api</h2>
+    <div>
+        <p>Aditi Sulke</p>
+        <button onclick="color()">Click here</button>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+.new {
+    display:block;
+}
+.eid >div{
+    min-width: 200px;
+    float: left;
+}

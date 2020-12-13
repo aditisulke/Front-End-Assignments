@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> FullScreen API</title>
+    <link rel="stylesheet" type="text/css" href="FullscreenApi.css">
+
+</head>
+
+<body>
+    <div id="box" onclick="full_screen()"></div>
+
+    <script type="text/javascript">
+        function full_screen() {
+            var element = document.getElementById('box')
+
+            if (document.fullscreenEnabled) {
+                if ('requestFullscreen' in document) {
+                    element.requestFullscreen()
+                }
+            } else {
+                if ('exiitFullscreen' in document) {
+                    document.exitFullscreen()
+                }
+            }
+
+        }
+
+
+        function screen_change() {
+            if (document.fullscreenElement) {
+                console.log("Current full screen element is" + (document.fullscreenEnabled));
+            } else {
+                if ("exitFullscreen" in document) {
+                    document.exitFullscreen();
+                }
+            }
+
+            document.addEventListener("fullscreenchange", screen_change); {
+                console.log("Fullscreen failed")
+            }
+        }
+    </script>
+</body>
+
+</html>
