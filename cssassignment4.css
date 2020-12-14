@@ -1,0 +1,51 @@
+.leftside {
+    width: 230px;
+    height: 20px;
+    float: left;
+    border: 1px solid green;
+    margin: 5px;
+    background-color: lightgrey 15 16
+}
+
+.department {
+    width: 230px;
+    height: 80px;
+    float: left;
+    margin: 5px;
+    border: 1px solid green;
+    /*background-color: lightgrey;*/
+
+}
+
+.rightside {
+    width: 250px;
+    height: 20px;
+    float: left;
+    border: 1px solid black;
+    margin: 5px;
+
+}
+
+.cbox {
+    width: 250px;
+    height: 80px;
+    float: left;
+    border: 1px solid black;
+    margin: 5px;
+
+}
+
+form {
+    border: 1px solid black;
+    width: 520px;
+    height: 450px;
+    padding: 3px;
+
+}
+
+#btn {
+    position: absolute;
+    left: 260px;
+    top: 500px;
+
+}

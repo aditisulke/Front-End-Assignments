@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=decive-width, initial-scale=1.0" />
+    <title> Oxem Technologies </title>
+    <style>
+        #myCanvas{
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <canvas id="myCanvas" width="1000" height="1000">
+    </canvas>
+
+    <script>
+        var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet']
+        var arcWidth = 20;
+        var radius = 8 * 10;
+        var rainbow = document.getElementById('myCanvas');
+        var context = rainbow.getContext('2d');
+        rainbow.width = (radius + (colors.length - 0.5) * arcWidth) * 2;
+        rainbow.height = radius + (colors.length - 1) * arcWidth;
+
+        var drawArc = function (color)/*gets colour*/  {
+            context.beginPath()//begins path
+
+            // define centre 
+            context.arc(rainbow.width / 2, rainbow.height + arcWidth / 2, radius, Math.PI, 2 * Math.PI)
+            context.lineWidth = arcWidth
+            context.strokeStyle = color;
+            context.stroke()
+            context.closePath()
+            radius += arcWidth
+        }
+        
+        colors.reverse().forEach(drawArc)
+    </script>
+</body>
+
+</html>

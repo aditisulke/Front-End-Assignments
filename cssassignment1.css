@@ -1,0 +1,10 @@
+table{
+    border:2px;
+    color: silver;
+}
+th{
+    background-color: silver;
+}
+tr:nth-child(even){
+    background-color: lightgreen;
+}

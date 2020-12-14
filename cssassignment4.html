@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CSS Assignment 4</title>
+    <link rel="stylesheet" type="text/css" href="cssassignment4.css">
+
+</head>
+
+
+<body>
+    <h2>Registration Form</h2>
+    <left>
+        <form>
+            <div class="leftside">Employee ID: </div>
+            <input class="rightside" type="number" name="EmpId" required="true" autofocus="true" min="10001"
+                max="15000"> <br><br>
+            <div class="leftside">First Name: </div>
+            <input class="rightside" type="text" name="fname" required="true" minlength="3" maxlength="15"
+                pattern="[a-zA-Z]{3,}"> <br><br>
+            <div class="leftside">Last Name: </div>
+            <input class="rightside" type="text" name="lname" required="true" minlength="5" maxlength="25"
+                pattern="[A-Za-z]{5,}"> <br><br>
+            <div class="department">Department: </div>
+            <div class="cbox">
+                <div>
+                    <input type="radio" name="dept" id="IT" 72 checked>
+                    <label for="IT">IT</label>
+                </div>
+
+
+                <div>
+                    <input type="radio" name="dept" id="HR">
+                    <label for="HR">HR</label>
+                </div>
+
+
+                <div>
+                    <input type="radio" name="dept" id="Finance">
+                    <label for="Finance">Finance</label>
+                </div>
+                <div>
+                    <input type="radio" name="dept" id="Admin">
+                    <label for="Admin">Admin</label>
+                </div>
+            </div>
+            <br>
+            <div class="leftside">Date of Joining: </div>
+            <input class="rightside" type="date" required="true" max="2020-12-13"> <br><br>
+            <div class="leftside">Email: </div>
+            <input class="rightside" type="email" required="true"> <br><br>
+            <div class="leftside">Contact No.: </div>
+            <input class="rightside" type="tel" pattern="[0-9]{10}" required="true"> <br><br>
+            <div class="leftside">Address: </div>
+            <input class="rightside" type="text" required="true"> <br><br>
+            <div class="department">Training Programs to be attended: </div>
+            <div class="cbox">
+                <input type="checkbox" id="t1">
+                <label for="t1"> Web Basics</label><br>
+                <input type="checkbox" id="t2">
+                <label for="t2"> C#</label><br>
+                <input type="checkbox" id="t3">
+                <label for="t3"> Entity Framework</label><br>
+                <input type="checkbox" id="t4">
+                <label for="t4"> ASP.net MVC</label>
+            </div>
+            <br><br>
+            <div id="btn"><button type="submit">Register </button> <button type="reset">Cancel</button></div>
+
+        </form>
+    </left>
+</body>
+
+
+</html>

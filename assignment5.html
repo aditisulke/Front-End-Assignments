@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <canvas id="assign" width="200" height="200">
+        Assignment
+    </canvas>
+    <script>
+        var smile=document.getElementById('assign');
+        var context=smile.getContext('2d');
+        context.fillStyle="yellow";
+        
+        context.beginPath();
+        context.arc(80,80,50,0,Math.PI*2,true);
+        
+        //for colouring
+        context.fill();
+        
+        //for smile arc
+        context.moveTo(115,80);
+        context.arc(80,80,35,0,Math.PI,false);
+        
+        //for left eye
+        context.moveTo(65,60);
+        context.arc(60,60,5,0,Math.PI*2,true);
+        
+        //for right eye
+        context.moveTo(105,60);
+        context.arc(100,60,5,0,Math.PI*2,true);
+
+        context.stroke();
+
+    </script>
+    
+</body>
+</html>
